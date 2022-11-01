@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "LEMONMILK";
+    src: url("/fonts/lemon-milk-pro-ftr-regular.otf");
+  }
+
+  @font-face {
+    font-family: "LEMONMILKBOLD";
+    src: url("/fonts/lemon-milk-bold.otf");
+  }
+
+  @font-face {
+    font-family: "LEMONMILKMEDIUM";
+    src: url("/fonts/lemon-milk-medium.otf");
+  }
