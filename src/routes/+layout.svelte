@@ -9,6 +9,8 @@
 	import {fly, fade, slide} from 'svelte/transition';
 	import { quintOut,backIn,backOut, backInOut } from 'svelte/easing';
 
+    import Footer from '$lib/components/Footer.svelte'
+
     $: $loading = !!$navigating
 
     let showMobileNav = false;
@@ -22,7 +24,7 @@
     <title>Peking House</title>
 </svelte:head>
 <!-- Navbar goes here -->
-<header class="w-full h-16 bg-black">
+<header class="w-full h-16 bg-black sticky top-0">
         <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
             <!-- Logo Here -->
             <a class="text-white text-xl font-lemonmilkbold" href="https://www.kindacode.com">PEKING HOUSE</a>
@@ -108,3 +110,5 @@
         <Loading/>
 	</div>
 {/if}
+
+<Footer/>
