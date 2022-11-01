@@ -1,3 +1,9 @@
+<script>
+      import { MetaTags } from 'svelte-meta-tags';
+
+</script>
+<MetaTags title="Peking House" description="Peking House" />
+
 <div class="text-center">
   <h1 class="text-4xl tracking-tight font-lemonmilkbold text-gray-900 sm:text-5xl md:text-6xl">
     <span class="block xl:inline">Peking House</span>

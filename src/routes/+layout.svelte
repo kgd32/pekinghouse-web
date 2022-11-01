@@ -18,7 +18,9 @@
     }
 </script>
 
-
+<svelte:head>
+    <title>Peking House</title>
+</svelte:head>
 <!-- Navbar goes here -->
 <header class="w-full h-16 bg-black">
         <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
@@ -39,7 +41,7 @@
                     <a href="/" class="text-white opacity-70 hover:opacity-100 duration-300" >Home</a>
                 </li>
                 <li>
-                    <a href="/releases" class="text-white opacity-70 hover:opacity-100 duration-300" >Releases</a>
+                    <a href="/releases" class="text-white opacity-70 hover:opacity-100 duration-300  " >Releases</a>
                 </li>
                 <li>
                     <a href="/artists" class="text-white opacity-70 hover:opacity-100 duration-300" >Artists</a>

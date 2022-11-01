@@ -1,24 +1,16 @@
 <script>
-    import {flip} from 'svelte/animate';
-	import {fly, fade} from 'svelte/transition';
-    import { slide } from 'svelte/transition';
-    import { browser, dev, prerendering } from '$app/environment';
+    import { MetaTags } from 'svelte-meta-tags';
+  	import {fly, fade} from 'svelte/transition';
     import { onMount } from 'svelte';
-    import { navigating } from '$app/stores';
     import BlurhashImage from '$lib/blurhash/BlurhashImage.svelte';
 
 
 
   export let data;
 
-
-$: loading = $navigating
-
-onMount(async () => {
-
-});
 </script>
 
+<MetaTags title="Artists" description="Peking House artists" />
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 {#each data.artists.items as artist, index (index) }
