@@ -12,9 +12,9 @@
     <div class="flex justify-center lg:justify-start md:justify-start mb-2 md:mb-1 lg:mb-1">
         <span class="text-md tracking-wide font-lemonmilkmedium">{release.fields.artists[0].fields.name}</span>
     </div>
-    <div  class="">
+    <div>
         <a href="/releases/{release.fields.catnr}">
-        <img class="" src={release.fields?.cover?.fields?.file?.url}/>
+        <img src={release.fields?.cover?.fields?.file?.url} alt={release.fields.name}/>
         </a>
     </div>
     <div class="flex justify-center lg:justify-end md:justify-end mb-2 md:mb-1 lg:mb-1">
