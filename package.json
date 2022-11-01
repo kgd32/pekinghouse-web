@@ -35,7 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"blurhash": "^1.1.5",
-		"contentful": "^9.2.7",
+		"contentful": "^10.0.0-beta-v10.8",
 		"svelte-blurhash": "^1.2.1",
 		"svelte-progress-bar": "^3.0.2"
 	}
