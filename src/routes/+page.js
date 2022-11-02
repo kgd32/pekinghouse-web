@@ -3,15 +3,15 @@ import { client } from '$lib/contentfulClient';
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
+	const releases = await client.getEntries({
+		content_type: 'releases',
+		order: '-fields.releasedate',
+		limit: 8
+	});
 
-    const releases = await client.getEntries({
-        content_type: 'releases'
-    });
+	return {
+		releases
+	};
 
-    
-        return {
-            releases
-        };
-
-      throw error(404, 'Not found');
+	throw error(404, 'Not found');
 }

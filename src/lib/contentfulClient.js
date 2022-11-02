@@ -5,6 +5,7 @@ import contentful from 'contentful'
 
 console.log('devmode: ', dev);
 
+// different imports depending on dev or build
 const createClientFunc = dev ? createClient : contentful.createClient
 
 const client = createClientFunc({

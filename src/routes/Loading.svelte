@@ -1,15 +1,15 @@
 <script>
-    import { loading } from '$lib/stores/loading'
-    import { onDestroy, onMount } from 'svelte';
+	import { loading } from '$lib/stores/loading';
+	import { onDestroy, onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
 
-    const progress = tweened(0, {
+	const progress = tweened(0, {
 		duration: 3500,
 		easing: cubicOut
 	});
 
-    const unsub = loading.subscribe((state) => {
+	const unsub = loading.subscribe((state) => {
 		if (!state) {
 			progress.set(1, { duration: 1000 });
 		}
@@ -19,13 +19,10 @@
 	});
 
 	onDestroy(() => {
-        unsub();
-    });
+		unsub();
+	});
+</script>
 
-
-  </script>
-  
-  
 <div class="progress-bar">
 	<div class="progress-sliver" style={`--width: ${$progress * 100}%`} />
 </div>
