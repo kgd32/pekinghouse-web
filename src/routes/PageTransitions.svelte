@@ -3,11 +3,11 @@
   export let refresh = '';
 </script>
 
-<div class="transition-outer">
+<div class="w-full h-full">
   {#key refresh}
-    <div class="transition-inner"
-        in:fade={{ duration: 800, delay: 300 }}
-        out:fade={{ duration: 800}}>
+    <div class="w-full"
+        in:fade={{ duration: 700, delay: 500 }}
+        out:fade={{ duration: 700, delay: 500 }}>
       <slot />
     </div>
   {/key}

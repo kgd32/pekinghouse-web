@@ -24,7 +24,7 @@
     <title>Peking House</title>
 </svelte:head>
 <!-- Navbar goes here -->
-<header class="w-full h-16 bg-black sticky top-0">
+<header class="w-full h-16 bg-black sticky top-0 z-50">
         <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
             <!-- Logo Here -->
             <a class="text-white text-xl font-lemonmilkbold" href="https://www.kindacode.com">PEKING HOUSE</a>
@@ -99,11 +99,9 @@
 
 
 
-    <PageTransitions refresh={data.url.pathname}>
-        <main class="w-screen mx-auto max-w-7xl mt-8">
+        <main class="w-full mx-auto ">
             <slot/>
         </main>
-    </PageTransitions>
 
         {#if $loading === true}
 	<div out:fade={{ delay: 700 }}>
