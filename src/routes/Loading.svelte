@@ -30,7 +30,7 @@
 <style>
 	.progress-bar {
 		position: fixed;
-		top: 0;
+		top: 64px;
 		left: 0;
 		right: 0;
 		height: 0.2rem;

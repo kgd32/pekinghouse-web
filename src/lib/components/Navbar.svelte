@@ -1,4 +1,8 @@
 <script>
+	import { onMount } from 'svelte';
+	import { onDestroy } from 'svelte';
+	import { fly, fade, slide } from 'svelte/transition';
+
 	let showMobileNav = false;
 
 	function toggleNavbar() {
