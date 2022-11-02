@@ -27,7 +27,7 @@
 			</div>
 		</nav>
 		<div class="mt-8 flex justify-center space-x-6">
-			<a href="#" class="text-gray-400 hover:text-gray-500">
+			<a href="https://facebook.com/pekinghousemusic" class="text-gray-400 hover:text-gray-500">
 				<span class="sr-only">Facebook</span>
 				<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 					<path
@@ -38,7 +38,10 @@
 				</svg>
 			</a>
 
-			<a href="#" class="text-gray-400 hover:text-gray-500">
+			<a
+				href="https://www.instagram.com/pekinghousemusic/"
+				class="text-gray-400 hover:text-gray-500"
+			>
 				<span class="sr-only">Instagram</span>
 				<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 					<path
