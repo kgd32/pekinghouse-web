@@ -11,7 +11,7 @@
 	$: $loading = !!$navigating;
 </script>
 
-<div class="w-screen">
+<div class="w-full">
 	<Navbar />
 	<main class="w-full mx-auto ">
 		<slot />

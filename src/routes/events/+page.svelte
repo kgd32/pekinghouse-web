@@ -32,15 +32,13 @@
 			in:fly={{ y: 50, delay: 250 + index * 250, duration: 1200 }}
 		>
 			<div>
-				<a href="/releases/{release.fields.catnr}">
-					<img
-						src={release.fields?.cover?.fields?.file?.url}
-						alt={release.fields.name}
-						height="250"
-						width="250"
-						class="w-full md:w-96"
-					/>
-				</a>
+				<img
+					src={release.fields?.cover?.fields?.file?.url}
+					alt={release.fields.name}
+					height="250"
+					width="250"
+					class="w-full md:w-96"
+				/>
 			</div>
 			<div class="md:ml-4 w-full mt-4">
 				<div class="flex-1">
@@ -87,15 +85,13 @@
 			in:fly={{ y: 50, delay: 250 + index * 250, duration: 1200 }}
 		>
 			<div>
-				<a href="/releases/{release.fields.catnr}">
-					<img
-						src={release.fields?.cover?.fields?.file?.url}
-						alt={release.fields.name}
-						height="250"
-						width="250"
-						class="w-full md:w-96"
-					/>
-				</a>
+				<img
+					src={release.fields?.cover?.fields?.file?.url}
+					alt={release.fields.name}
+					height="250"
+					width="250"
+					class="w-full md:w-96"
+				/>
 			</div>
 			<div class="md:ml-4 w-full mt-4">
 				<div class="flex-1">
