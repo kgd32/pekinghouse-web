@@ -75,7 +75,7 @@
 			{/each}
 		</div>
 		<div class="flex justify-center">
-			<button on:click={moveLeft} class="mr-4" id="slideImageLeft">
+			<button on:click={moveLeft} class="mr-4" id="slideImageLeft" aria-label="slide image left">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
@@ -89,7 +89,7 @@
 					/>
 				</svg>
 			</button>
-			<button on:click={moveRight} class="ml-4" id="slideImageRight">
+			<button on:click={moveRight} class="ml-4" id="slideImageRight" aria-label="slide image right">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="16"
