@@ -6,7 +6,7 @@
 	export let data;
 </script>
 
-<MetaTags title="Artists" description="Peking House artists" />
+<MetaTags title="Releases - Peking House" description="Peking House releases" />
 
 <div>
 	<h2 class="mb-4 ml-4 font-lemonmilk  text-4xl" in:fly={{ y: 20, duration: 800 }}>Releases</h2>
