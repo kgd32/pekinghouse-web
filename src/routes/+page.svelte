@@ -67,8 +67,8 @@
 							class="z-50 snap-center shadow-2xl"
 							src="https:{release.fields?.cover?.fields?.file?.url}"
 							alt={release.fields.name}
-							height="600"
-							width="600"
+							height="600px"
+							width="600px"
 						/>
 					</a>
 				</div>
@@ -83,14 +83,17 @@
 			</div>
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 ">
 				{#each data.releases.items as release, index (index)}
-					<div class="flex flex-col" in:fly={{ y: 50, delay: 150 + index * 250, duration: 700 }}>
+					<div
+						class="flex transform flex-col transition duration-500 hover:scale-105"
+						in:fly={{ y: 50, delay: 150 + index * 250, duration: 700 }}
+					>
 						<div>
 							<a href="/releases/{release.fields.catnr}">
 								<img
 									src="https:{release.fields?.cover?.fields?.file?.url}"
 									alt={release.fields.name}
-									height="600"
-									width="600"
+									height="600px"
+									width="600px"
 								/>
 							</a>
 						</div>

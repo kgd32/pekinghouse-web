@@ -91,8 +91,8 @@
 				<img
 					src="https:{release.fields?.cover?.fields?.file?.url}"
 					alt={release.fields.name}
-					height="250"
-					width="250"
+					height="250px"
+					width="250px"
 					class="w-full md:w-96"
 				/>
 			</div>

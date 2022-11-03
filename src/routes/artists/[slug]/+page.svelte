@@ -14,7 +14,12 @@
 <div class="px-8">
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 		<div class="order-last md:order-first" in:fade={{ delay: 1000, duration: 2000 }}>
-			<img src="https:{data.artist?.image?.fields?.file?.url}" alt={data.artist.name} />
+			<img
+				src="https:{data.artist?.image?.fields?.file?.url}"
+				alt={data.artist.name}
+				height="600px"
+				width="600px"
+			/>
 		</div>
 		<div in:fly={{ y: 50, delay: 1200, duration: 2000 }}>
 			<h1 class="mb-2 font-lemonmilk text-3xl">{data.artist.name}</h1>
@@ -33,11 +38,14 @@
 			<div class="grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-4 ">
 				{#each data.releases as release, index (index)}
 					<a href="/releases/{release.fields.catnr}">
-						<div in:fly={{ y: 200, delay: 1500 + index * 250, duration: 2000 }}>
+						<div
+							class="transition duration-500 hover:scale-105"
+							in:fly={{ y: 200, delay: 1500 + index * 250, duration: 2000 }}
+						>
 							<img
 								src="https:{release.fields.cover?.fields?.file?.url}"
-								height="300"
-								widht="300"
+								height="300px"
+								widht="300px"
 								alt={release.fields.name}
 							/>
 							<span class="font-lemonmilk">{release.fields.name}</span>

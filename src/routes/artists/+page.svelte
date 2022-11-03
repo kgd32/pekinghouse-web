@@ -16,7 +16,7 @@
 	{#each data.artists.items as artist, index (index)}
 		<a href="/artists/{artist.fields.name}">
 			<div
-				class="-z-10 flex flex-col p-8 md:p-8 lg:p-6"
+				class="-z-10 flex flex-col p-8 transition duration-500 hover:scale-105 md:p-8 lg:p-6"
 				in:fly={{ y: 100, delay: 450 + index * 250, duration: 1400 }}
 			>
 				<div

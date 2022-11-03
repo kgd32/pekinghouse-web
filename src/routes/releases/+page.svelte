@@ -16,13 +16,13 @@
 	{#each data.releases.items as release, index (index)}
 		<a href="/releases/{release.fields.catnr}">
 			<div
-				class="-z-10 flex flex-col p-8 md:p-8 lg:p-6"
+				class="-z-10 flex flex-col p-8 transition duration-500 hover:scale-105 md:p-8 lg:p-6"
 				in:fly={{ y: 100, delay: 450 + index * 250, duration: 1400 }}
 			>
 				<div class="mb-1 flex justify-end ">
 					<span class="font-lemonmilk text-base lg:tracking-wide">{release.fields.catnr}</span>
 				</div>
-				<img src="https:{release.fields?.cover?.fields?.file?.url}" width="600" height="600" />
+				<img src="https:{release.fields?.cover?.fields?.file?.url}" width="600px" height="600px" />
 				<div class="mb-2 flex justify-center  lg:mb-1 ">
 					<span
 						class="font-lemonmilkmedium text-4xl tracking-wide md:text-3xl md:tracking-wide lg:text-2xl lg:tracking-wide"
