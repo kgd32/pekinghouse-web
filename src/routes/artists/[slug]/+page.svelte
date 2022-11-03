@@ -35,7 +35,7 @@
 					<a href="/releases/{release.fields.catnr}">
 						<div in:fly={{ y: 200, delay: 1500 + index * 250, duration: 2000 }}>
 							<img
-								src="https:{release.fields.cover?.fields?.file?.url}""
+								src="https:{release.fields.cover?.fields?.file?.url}"
 								height="300"
 								widht="300"
 								alt={release.fields.name}
