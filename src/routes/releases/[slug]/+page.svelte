@@ -18,7 +18,7 @@
 				<h2 class="font-lemonmilk text-base uppercase tracking-wide text-gray-500">
 					{data.release.catnr}
 				</h2>
-				<h3 class="mt-2 py-2 font-lemonmilk text-3xl leading-8 text-black sm:text-4xl">
+				<h3 class="mt-2 py-2 font-lemonmilk text-xl leading-8 text-black">
 					{data.release.name}
 				</h3>
 			</div>
