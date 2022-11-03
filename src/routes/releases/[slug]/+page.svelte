@@ -11,7 +11,7 @@
 	description="{data.release.name} on Peking House"
 />
 
-<div class="bg-white">
+<div class="w-full bg-white">
 	<div class="flex flex-col items-center justify-center">
 		<div class="p-8" in:fly={{ y: 100, delay: 450, duration: 1400 }} out:fade>
 			<div>
