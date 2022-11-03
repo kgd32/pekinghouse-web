@@ -1,4 +1,5 @@
 <script>
+	import { MetaTags } from 'svelte-meta-tags';
 	import { fly, fade } from 'svelte/transition';
 
 	export let data;
@@ -17,6 +18,8 @@
 		'December'
 	];
 </script>
+
+<MetaTags title="Events" description="Peking House Events" />
 
 <div class="p-4">
 	<div class="mb-4">

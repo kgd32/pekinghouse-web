@@ -1,9 +1,15 @@
 <script>
 	import { bounceIn } from 'svelte/easing';
 	import { fly, fade } from 'svelte/transition';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	export let data;
 </script>
+
+<MetaTags
+	title="{data.artist.name} - Peking House"
+	description="{data.artist.name} releases on Peking House"
+/>
 
 <div class="px-8">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
