@@ -2,7 +2,6 @@
 	import { MetaTags } from 'svelte-meta-tags';
 	import { fly, fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import BlurhashImage from '$lib/blurhash/BlurhashImage.svelte';
 
 	export let data;
 </script>

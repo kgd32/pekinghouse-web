@@ -44,15 +44,6 @@
 	onMount(async () => {
 		setInterval(moveSlide, 6000);
 	});
-
-	let m = { x: 0, y: 0 };
-
-	function handleMousemove(event) {
-		m.x = event.clientX / 100;
-		m.y = event.clientY;
-	}
-
-	let coverimages = [1, 2, 3, 4, 5];
 </script>
 
 <MetaTags title="Peking House" description="Peking House" />
