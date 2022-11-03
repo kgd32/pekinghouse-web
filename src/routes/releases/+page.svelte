@@ -5,7 +5,7 @@
 </script>
 
 <div>
-	<h2 class="mb-4 font-lemonmilk text-4xl" in:fly={{ y: 20, duration: 800 }}>Releases</h2>
+	<h2 class="mb-4 ml-4 font-lemonmilk text-4xl" in:fly={{ y: 20, duration: 800 }}>Releases</h2>
 </div>
 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 	{#each data.releases.items as release, index (index)}

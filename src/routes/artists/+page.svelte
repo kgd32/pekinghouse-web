@@ -9,7 +9,7 @@
 <MetaTags title="Artists" description="Peking House artists" />
 
 <div>
-	<h2 class="mb-4 font-lemonmilk text-4xl" in:fly={{ y: 20, duration: 800 }}>Artists</h2>
+	<h2 class="mb-4 ml-4 font-lemonmilk  text-4xl" in:fly={{ y: 20, duration: 800 }}>Artists</h2>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
