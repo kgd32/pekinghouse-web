@@ -36,7 +36,7 @@
 		>
 			<div>
 				<img
-					src={release.fields?.cover?.fields?.file?.url}
+					src="https:{release.fields?.cover?.fields?.file?.url}"
 					alt={release.fields.name}
 					height="250"
 					width="250"
@@ -89,7 +89,7 @@
 		>
 			<div>
 				<img
-					src={release.fields?.cover?.fields?.file?.url}
+					src="https:{release.fields?.cover?.fields?.file?.url}"
 					alt={release.fields.name}
 					height="250"
 					width="250"

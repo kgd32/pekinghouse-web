@@ -27,7 +27,7 @@
 						>{artist.fields.name}</span
 					>
 				</div>
-				<img src={artist.fields?.image?.fields?.file?.url} width="600" height="600" />
+				<img src="https:{artist.fields?.image?.fields?.file?.url}" width="600" height="600" />
 			</div>
 		</a>
 	{/each}

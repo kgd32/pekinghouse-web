@@ -65,7 +65,7 @@
 					<a href="/releases/{release.fields.catnr}">
 						<img
 							class="z-50 snap-center shadow-2xl"
-							src={release.fields?.cover?.fields?.file?.url}
+							src="https:{release.fields?.cover?.fields?.file?.url}"
 							alt={release.fields.name}
 							height="600"
 							width="600"
@@ -87,7 +87,7 @@
 						<div>
 							<a href="/releases/{release.fields.catnr}">
 								<img
-									src={release.fields?.cover?.fields?.file?.url}
+									src="https:{release.fields?.cover?.fields?.file?.url}"
 									alt={release.fields.name}
 									height="600"
 									width="600"

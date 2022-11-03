@@ -25,7 +25,7 @@
 			<div>
 				<div>
 					<img
-						src={data.release.cover?.fields?.file?.url}
+						src="https:{data.release.cover?.fields?.file?.url}"
 						alt={data.release.name}
 						width="600"
 						height="600"

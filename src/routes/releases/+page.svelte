@@ -18,7 +18,7 @@
 			</div>
 			<div>
 				<a href="/releases/{release.fields.catnr}">
-					<img src={release.fields?.cover?.fields?.file?.url} alt={release.fields.name} />
+					<img src="https:{release.fields?.cover?.fields?.file?.url}" alt={release.fields.name} />
 				</a>
 			</div>
 			<div class="mb-2 flex justify-center md:mb-1 md:justify-center lg:mb-1">
