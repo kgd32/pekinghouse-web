@@ -2,6 +2,7 @@
 	import { bounceIn } from 'svelte/easing';
 	import { fly, fade } from 'svelte/transition';
 	import { MetaTags } from 'svelte-meta-tags';
+	import { attribute_to_object } from 'svelte/internal';
 
 	export let data;
 </script>
@@ -23,9 +24,11 @@
 		</div>
 		<div in:fly={{ y: 50, delay: 1200, duration: 2000 }}>
 			<h1 class="mb-2 font-lemonmilk text-3xl">{data.artist.name}</h1>
-			<p class="font-lemonmilk text-base text-gray-700" style="white-space: pre-line">
-				{data.artist.bio}
-			</p>
+			{#if data.artist.bio}
+				<p class="font-lemonmilk text-base text-gray-700" style="white-space: pre-line">
+					{data.artist.bio}
+				</p>
+			{/if}
 		</div>
 	</div>
 	{#if data.releases}
