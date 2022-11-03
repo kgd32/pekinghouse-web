@@ -15,10 +15,10 @@
 	<div class="flex flex-col items-center justify-center">
 		<div class="p-8" in:fly={{ y: 100, delay: 450, duration: 1400 }} out:fade>
 			<div>
-				<h2 class="text-base text-gray-500 font-lemonmilk tracking-wide uppercase">
+				<h2 class="font-lemonmilk text-base uppercase tracking-wide text-gray-500">
 					{data.release.catnr}
 				</h2>
-				<h3 class="mt-2 text-3xl leading-8 text-black py-2 sm:text-4xl font-lemonmilk">
+				<h3 class="mt-2 py-2 font-lemonmilk text-3xl leading-8 text-black sm:text-4xl">
 					{data.release.name}
 				</h3>
 			</div>
@@ -35,14 +35,14 @@
 					{#each data.release.tracks as audio}
 						<div>
 							<Audioplayer audiourl={audio.url} />
-							<span class="text-lg font-lemonmilk mt-2 ml-12">{audio.name}</span>
+							<span class="mt-2 ml-12 font-lemonmilk text-lg">{audio.name}</span>
 						</div>
 					{/each}
 				{/if}
-				<div class="flex justify-center mt-4">
+				<div class="mt-4 flex justify-center">
 					<a href={data.release.traxsourceurl}>
 						<button
-							class="bg-green-500 hover:bg-green-700 text-white text-sm font-lemonmilk py-2 px-4 rounded-full"
+							class="rounded-full bg-green-500 py-2 px-4 font-lemonmilk text-sm text-white hover:bg-green-700"
 							>Buy at Traxsource</button
 						>
 					</a>

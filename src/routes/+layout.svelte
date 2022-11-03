@@ -13,7 +13,7 @@
 
 <div class="w-full">
 	<Navbar />
-	<main class="w-full mx-auto ">
+	<main class="mx-auto w-full ">
 		<slot />
 	</main>
 	<Footer />

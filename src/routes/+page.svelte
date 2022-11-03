@@ -56,19 +56,19 @@
 </script>
 
 <MetaTags title="Peking House" description="Peking House" />
-<div class="w-full mx-auto">
+<div class="mx-auto w-full">
 	<section class="relative bg-ph-blue-50">
-		<div class="absolute w-full h-2/3  bg-white -z-0 hero px-8" />
+		<div class="hero absolute -z-0  h-2/3 w-full bg-white px-8" />
 
 		<div
-			class="h-2/3 w-full snap-mandatory snap-x overflow-x-auto md:overflow-hidden flex flex-nowrap text-center rotate-img pb-8"
+			class="rotate-img flex h-2/3 w-full snap-x snap-mandatory flex-nowrap overflow-x-auto pb-8 text-center md:overflow-hidden"
 			bind:this={imageslider}
 		>
 			{#each data.releases.items as release}
 				<div
-					class="bg-transparent text-white space-y-4 flex-none w-full flex flex-col items-center py-16 z-40"
+					class="z-40 flex w-full flex-none flex-col items-center space-y-4 bg-transparent py-16 text-white"
 				>
-					<h2 class="text-3xl text-black max-w-md font-lemonmilkmedium text-focus-in">
+					<h2 class="text-focus-in max-w-md font-lemonmilkmedium text-3xl text-black">
 						{release.fields.name}
 					</h2>
 					<a href="/releases/{release.fields.catnr}">
@@ -86,11 +86,11 @@
 	</section>
 
 	<section class="h-fit bg-ph-blue-50 p-8 md:p-16">
-		<div class="md:px-8 mx-auto max-w-6xl">
+		<div class="mx-auto max-w-6xl md:px-8">
 			<div>
-				<h2 class="text-2xl font-lemonmilk mb-4">Latest Releases</h2>
+				<h2 class="mb-4 font-lemonmilk text-2xl">Latest Releases</h2>
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
+			<div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 ">
 				{#each data.releases.items as release, index (index)}
 					<div class="flex flex-col" in:fly={{ y: 50, delay: 150 + index * 250, duration: 700 }}>
 						<div>
@@ -103,8 +103,8 @@
 								/>
 							</a>
 						</div>
-						<div class="flex justify-start mb-2 md:mb-1 lg:mb-1">
-							<span class="text-base font-lemonmilk">{release.fields.name}</span>
+						<div class="mb-2 flex justify-start md:mb-1 lg:mb-1">
+							<span class="font-lemonmilk text-base">{release.fields.name}</span>
 						</div>
 					</div>
 				{/each}

@@ -3,7 +3,7 @@
 	export let refresh = '';
 </script>
 
-<div class="w-full h-full">
+<div class="h-full w-full">
 	{#key refresh}
 		<div
 			class="w-full"
