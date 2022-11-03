@@ -14,7 +14,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 	{#each data.releases.items as release, index (index)}
-		<a href="/artists/{release.fields.name}">
+		<a href="/releases/{release.fields.catnr}">
 			<div
 				class="-z-10 flex flex-col p-8 md:p-8 lg:p-6"
 				in:fly={{ y: 100, delay: 450 + index * 250, duration: 1400 }}
