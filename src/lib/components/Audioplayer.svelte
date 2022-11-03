@@ -152,7 +152,7 @@
 		background-color: #e5e5e5;
 		border-radius: 5px;
 		background-size: 0% 100%;
-		background-image: linear-gradient(#de5e97, #de5e97);
+		background-image: linear-gradient(#f8485e, #f8485e);
 		background-repeat: no-repeat;
 		margin-right: var(--space);
 	}
@@ -165,7 +165,7 @@
 		cursor: pointer;
 		opacity: 0;
 		transition: all 0.1s;
-		background-color: #a94672;
+		background-color: #95202d;
 	}
 
 	.timeline::-moz-range-thumb {
@@ -176,7 +176,7 @@
 		cursor: pointer;
 		opacity: 0;
 		transition: all 0.1s;
-		background-color: #a94672;
+		background-color: #95202d;
 	}
 
 	.timeline::-ms-thumb {
@@ -187,11 +187,11 @@
 		cursor: pointer;
 		opacity: 0;
 		transition: all 0.1s;
-		background-color: #a94672;
+		background-color: #95202d;
 	}
 
 	.timeline::-webkit-slider-thumb:hover {
-		background-color: #943f65;
+		background-color: #95202d;
 	}
 
 	.timeline:hover::-webkit-slider-thumb {
@@ -199,7 +199,7 @@
 	}
 
 	.timeline::-moz-range-thumb:hover {
-		background-color: #943f65;
+		background-color: #95202d;
 	}
 
 	.timeline:hover::-moz-range-thumb {
@@ -207,7 +207,7 @@
 	}
 
 	.timeline::-ms-thumb:hover {
-		background-color: #943f65;
+		background-color: #95202d;
 	}
 
 	.timeline:hover::-ms-thumb {
